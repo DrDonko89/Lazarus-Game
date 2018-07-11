@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="lib/p5.min.js"></script>
+	<script src="lib/p5.dom.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="javascript/sketch.js"></script>
+    <script src="javascript/disableScroll.js"></script>
+    <script src="javascript/box.js"></script>
+    <script src="javascript/grid.js"></script>
+    <script src="javascript/lazarus.js"></script>
+    <script src="javascript/lvlHandler.js"></script>
+    <script src="javascript/stop.js"></script>
+    <link rel="stylesheet" href="style/basicStyle.css" type="text/css">
+  </head>
+  <body>
+      <div id="container" align="center">
+          <h1 style="margin: 2px 2px 2px 2px;">Lazarus</h1>
+      </div>
+      <div class="imgs" hidden>
+        <img src="resources/Lazarus_stand.png" id="laz">
+        <img src="resources/Lazarus_squished.png" id="laz_splat">
+        <img src="resources/background.png" id="bg">
+        <img src="resources/CardBox.png" id="card">
+        <img src="resources/WoodBox.png" id="wood">
+        <img src="resources/MetalBox.png" id="metal">
+        <img src="resources/StoneBox.png" id="stone">
+        <img src="resources/Mesh.png" id="wall">
+        <img src="resources/Button.png" id="stopImg">
+      </div>
+
+      <audio src="resources/Music.mp3" autoplay loop></audio>
+
+      <div align="center">
+        <input id="lvlStr" type="text" placeholder="level">
+        <button onclick="importLvl()">Import</button>
+        <button onclick="reset()">reset</button>
+      </div>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="lib/p5.min.js"></script>
+    <script src="lib/p5.dom.min.js"></script>
+    <script src="javascript/sketch.js"></script>
+    <script src="javascript/grid.js"></script>
+    <script src="javascript/imgOBJs.js"></script>
+    <script src="javascript/lvlHandler.js"></script>
+    <style> body {padding: 0; margin: 0;} </style>
+  </head>
+  <body>
+        <div id="container" align="center">
+            <h1 style="margin: 2px 2px 2px 2px;">Level designer</h1>
+        </div>
+        <div hidden>
+            <img src="resources/background.png" id="bg">
+            <img src="resources/Mesh.png" id="wall">
+            <img src="resources/Button.png" id="stopImg">
+            <img src="resources/Lazarus_stand.png" id="laz">
+        </div>
+        <div align="center">
+          <button onclick="returnNewLvl()">Finish</button>
+          <input id="lvlStr" type="text" placeholder="level">
+          <button onclick="importLvl()">Import</button>
+          <button onclick="location.reload();">Reset</button>
+        </div>
+  </body>
+</html>
